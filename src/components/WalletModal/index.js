@@ -114,6 +114,7 @@ const WALLET_VIEWS = {
 
 export default function WalletModal({ pendingTransactions, confirmedTransactions, ENSName }) {
   const { active, account, connector, activate, error } = useWeb3React()
+  console.log('WalletModal:', { active, account, error })
 
   const [walletView, setWalletView] = useState(WALLET_VIEWS.ACCOUNT)
 
@@ -158,6 +159,7 @@ export default function WalletModal({ pendingTransactions, confirmedTransactions
     setPendingWallet(connector) // set wallet for pending view
     setWalletView(WALLET_VIEWS.PENDING)
     activate(connector, undefined, true).catch(e => {
+      console.log('tryActivation:', { error: e })
       setPendingError(true)
     })
   }

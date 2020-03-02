@@ -533,7 +533,19 @@ const INITIAL_TOKENS_CONTEXT = {
       [SYMBOL]: 'DAI',
       [DECIMALS]: 18,
       [EXCHANGE_ADDRESS]: '0xaF51BaAA766b65E8B3Ee0C2c33186325ED01eBD5'
-    }
+    },
+    '0xF9bA5210F91D0474bd1e1DcDAeC4C58E359AaD85': {
+      [NAME]: 'MKR',
+      [SYMBOL]: 'MKR',
+      [DECIMALS]: 18,
+      [EXCHANGE_ADDRESS]: '0x93bB63aFe1E0180d0eF100D774B473034fd60C36'
+    },
+    /*createProtocol({
+      name: 'Uniswap MKR',
+      address: '0x93bB63aFe1E0180d0eF100D774B473034fd60C36', // exchange address
+      abi: EXCHANGE_ABI,
+      inputDescriptors: INPUT_DESCRIPTOR_BY_METHOD,
+    }),*/
   }
 }
 

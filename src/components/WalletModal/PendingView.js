@@ -72,6 +72,7 @@ const LoadingWrapper = styled.div`
 
 export default function PendingView({ uri = '', size, connector, error = false, setPendingError, tryActivation }) {
   const isMetamask = window.ethereum && window.ethereum.isMetaMask
+  console.log('PendingView', {uri, size, error})
 
   return (
     <PendingSection>
